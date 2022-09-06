@@ -1,0 +1,30 @@
+body{
+
+
+}
+.movie-app > .row{
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+
+}
+.image-container{
+  position: relative;
+  transition: transform 0.2s;
+}
+.overlay{
+  position: absolute;
+  opacity: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 0.2s;
+  
+}
+.image-container:hover{
+  transform: scale(1.1);
+}
+.image-container:hover .overlay{
+  opacity: 1;
+}
